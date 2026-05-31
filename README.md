@@ -5,12 +5,12 @@
 ## Установка
 
 1. Закройте Steam.
-2. Скопируйте папку `kzt_rub_converter` в `Steam/plugins` или в `Steam/millennium/plugins`.
+2. Скопируйте эту папку проекта в `Steam\plugins` или в `Steam\millennium\plugins`.
 3. Запустите Steam.
 4. Включите плагин в Millennium.
 5. Откройте магазин Steam.
 
-Плагин сам скопирует нужные файлы в `Steam/steamui` и начнёт работать без дополнительной настройки.
+Плагин сам скопирует нужные файлы в `Steam\steamui` и начнёт работать без дополнительной настройки.
 
 ## Как считается курс
 
@@ -41,7 +41,7 @@ RUB = KZT / 6
 
 Если плагин не работает:
 
-- Проверьте, что папка `kzt_rub_converter` лежит именно в `Steam/plugins` или в `Steam/millennium/plugins`.
+- Проверьте, что папка проекта лежит именно в `Steam\plugins` или в `Steam\millennium\plugins`.
 - Проверьте, что плагин включён в Millennium.
 - Полностью перезапустите Steam после установки или обновления плагина.
 - Если Steam установлен в защищённую папку, например `Program Files`, попробуйте запустить Steam с повышенными правами.
@@ -58,8 +58,8 @@ RUB = KZT / 6
 - Найдите строки `Requesting data from ...`
 - Найдите строку `Selected exchange rate source: ...`
 
-Если Millennium не показывает нужные строки, откройте файл:
+Если Millennium не показывает нужные строки, откройте файл `kzt_rub_converter.log` в папке плагина, рядом с `plugin.json`.
 
 ```text
-Steam/millennium/logs/kzt_rub_converter.log
+...\папка_плагина\kzt_rub_converter.log
 ```
