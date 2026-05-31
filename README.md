@@ -2,6 +2,8 @@
 
 Millennium Steam Client plugin that shows an approximate RUB price next to KZT prices in the Steam store.
 
+## This plugin shows an approximate currency conversion. It does not show the actual Steam regional price for Russia.
+
 <img width="1343" height="1133" alt="{AB9AF4F1-9D89-4CD7-96CC-25C3E7EC5665}" src="https://github.com/user-attachments/assets/06db6510-ed1b-46b4-a05b-1aba13507c44" />
 
 ## Installation
