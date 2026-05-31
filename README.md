@@ -2,6 +2,8 @@
 
 Плагин для Millennium Steam Client, который показывает примерную цену в рублях рядом с ценами в казахстанских тенге в магазине Steam.
 
+<img width="1343" height="1133" alt="{AB9AF4F1-9D89-4CD7-96CC-25C3E7EC5665}" src="https://github.com/user-attachments/assets/06db6510-ed1b-46b4-a05b-1aba13507c44" />
+
 ## Установка
 
 1. Закройте Steam.
@@ -63,3 +65,4 @@ RUB = KZT / 6
 ```text
 ...\папка_плагина\kzt_rub_converter.log
 ```
+
