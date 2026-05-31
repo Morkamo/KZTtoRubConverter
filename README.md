@@ -2,7 +2,13 @@
 
 Millennium Steam Client plugin that shows an approximate RUB price next to KZT prices in the Steam store.
 
+<<<<<<< HEAD
 Russian version: `README_RU.md`
+=======
+<img width="1343" height="1133" alt="{AB9AF4F1-9D89-4CD7-96CC-25C3E7EC5665}" src="https://github.com/user-attachments/assets/06db6510-ed1b-46b4-a05b-1aba13507c44" />
+
+## Установка
+>>>>>>> 836b0b4d267a51f2d0d8e32ba44115c354c37e6c
 
 ## Installation
 
@@ -65,3 +71,4 @@ If Millennium does not show those lines, open `kzt_rub_converter.log` in the plu
 ```text
 ...\plugin_folder\kzt_rub_converter.log
 ```
+
