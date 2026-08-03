@@ -9,8 +9,26 @@ local plugin_log_path = nil
 local js_module_id = nil
 local css_module_id = nil
 local FALLBACK_RUB_PER_KZT = 1 / 6
-local RATE_TIMEOUT_SECONDS = 1
+local RATE_TIMEOUT_SECONDS = 10
 local RATE_PROVIDERS = {
+    {
+        name = "Freedom Bank KZ (non-cash)",
+        url = "https://bankffin.kz/api/exchange-rates/getRates",
+        pick = function(body)
+
+            local rate = body:match(
+                '"non_cash".-"buyCode"%s*:%s*"RUB".-"sellCode"%s*:%s*"KZT".-"sellRate"%s*:%s*"([%d%.]+)"'
+            )
+
+            rate = tonumber(rate)
+
+            if rate then
+                return 1 / rate
+            end
+
+            return nil
+        end
+    },
     {
         name = "cbr-xml-daily.ru",
         url = "https://www.cbr-xml-daily.ru/latest.js",
